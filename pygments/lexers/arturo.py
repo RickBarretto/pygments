@@ -82,10 +82,10 @@ class ArturoLexer(RegexLexer):
             (r';.*?$', Comment.Single),
             include('shebang'),
         ],
-            'shebang': [
-                (r'^((\s#!)|(#!))(.*)$',
-                        Comment.Hashbang)
-            ],
+        
+        'shebang': [
+            (r'^((\s#!)|(#!))(.*)$', Comment.Hashbang)
+        ],
 
         'operators': [
             include('punctuation'),
