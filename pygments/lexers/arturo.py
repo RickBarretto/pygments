@@ -17,7 +17,10 @@ from pygments.token import Comment, Generic, Keyword, Name, Number, Operator,\
 from pygments.util import ClassNotFound, get_bool_opt
 
 class ArturoLexer(RegexLexer):
-
+    """
+    Lexer for the `Arturo <https://arturo-lang.io/>`_ programming language.
+    .. versionadded:: 0.9.80
+    """
     name = 'Arturo'
     aliases = ['Arturo', 'Art', 'arturo', 'art']
     filenames = ['*.art']
