@@ -200,7 +200,7 @@ class ArturoLexer(RegexLexer):
                     'inside-template': [
                         (r'\|\|\>',
                             String.Interpol, '#pop'),
-                        (r'.', using(this)),
+                        (r'[^|]+', using(this)),
                     ],
                 'string-escape': [
                     (r'\\\\', String.Escape), # Escaping backslash
