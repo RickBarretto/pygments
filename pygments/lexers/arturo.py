@@ -191,7 +191,7 @@ class ArturoLexer(RegexLexer):
                 ],
                     'inside-interpol': [
                         (r'\|', String.Interpol, '#pop'),
-                        (r'.', using(this)),
+                        (r'[^|]+', using(this)),
                     ],
                 'string-templates': [
                     (r'\<\|\|',
