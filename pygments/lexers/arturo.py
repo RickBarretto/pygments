@@ -79,7 +79,7 @@ class ArturoLexer(RegexLexer):
         ],
 
         'comments': [
-            (r'(;)(.*)$', Comment.Single),
+            (r';.*?$', Comment.Single),
             include('shebang'),
         ],
             'shebang': [
