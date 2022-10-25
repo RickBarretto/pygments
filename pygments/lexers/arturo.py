@@ -22,7 +22,7 @@ class ArturoLexer(RegexLexer):
     .. versionadded:: 0.9.80
     """
     name = 'Arturo'
-    aliases = ['Arturo', 'Art', 'arturo', 'art']
+    aliases = ['arturo', 'art']
     filenames = ['*.art']
 
 
